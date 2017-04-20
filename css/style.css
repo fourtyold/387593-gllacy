@@ -3,7 +3,7 @@ body {
   line-height: normal;
   color: black;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .index-title {
@@ -11,7 +11,7 @@ body {
   line-height: normal;
   color: white;
   font-weight: bold;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;;
 }
 
 .best-offer-title {
@@ -19,7 +19,7 @@ body {
   line-height: normal;
   color: black;
   font-weight: bold;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;;
 }
 
 .news-title {
@@ -27,5 +27,5 @@ body {
   line-height: normal;
   color: black;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;;
 }
