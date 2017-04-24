@@ -4,9 +4,11 @@ body {
   color: black;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.index-title {
+.index-title h1 {
   font-size: 32px;
   line-height: normal;
   color: white;
@@ -28,4 +30,226 @@ body {
   color: black;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 9px;
+  outline: green solid 3px;
+}
+
+.container {
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+  outline: red solid 3px;
+}
+
+.header-logo {
+  width: 154px;
+  float: left;
+  margin-right: 24px;
+  outline: yellow solid 3px;
+  min-height: 64px;
+}
+
+.main-navigation {
+  width: 674px;
+  float: left;
+  outline: yellow solid 3px;
+  min-height: 64px;
+}
+
+.user-block {
+  width: 267px;
+  float: right;
+  outline: yellow solid 3px;
+  min-height: 64px;
+}
+
+.info {
+  width: 165px;
+  float: right;
+  outline: yellow solid 3px;
+  min-height: 38px;
+}
+
+.slider {
+  margin-bottom: 10px;
+  outline: green solid 3px;
+}
+
+.slider-controls {
+  width: 78px;
+  float: left;
+  margin-top: 440px;
+  margin-right: 99px;
+  outline: yellow solid 3px;
+  min-height: 20px;
+}
+
+.slider-inner {
+  width: 803px;
+  float: left;
+  outline: yellow solid 3px;
+  min-height: 515px;
+}
+
+.offers {
+  margin-bottom: 10px;
+  outline: green solid 3px;
+}
+
+.best-offer {
+  width: 561px;
+  float: left;
+  outline: yellow solid 3px;
+  min-height: 229px;
+}
+
+.best-offer:last-child {
+  float: right;
+}
+
+.popular-items {
+  margin-bottom: 10px;
+  outline: green solid 3px;
+  min-height: 382px;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  margin-right: 22px;
+  margin-bottom: 41px;
+  vertical-align: top;
+  min-height: 322px;
+  outline: yellow solid 3px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features {
+  margin-bottom: 40px;
+  min-height: 307px;
+  outline: green solid 3px;
+}
+
+.index-content {
+  margin-bottom: 40px;
+  outline: green solid 3px;
+}
+
+.news {
+  width: 560px;
+  float: left;
+  min-height: 220px;
+  outline: yellow solid 3px;
+}
+
+.subscribe {
+  width: 560px;
+  float: right;
+  min-height: 220px;
+  outline: yellow solid 3px;
+}
+
+.map {
+  min-height: 430px;
+  outline: green solid 3px;
+}
+
+.pin {
+  width: 80px;
+  float: left;
+  margin-top: 138px;
+  margin-left: 239px;
+  min-height: 140px;
+  outline: yellow solid 3px;
+}
+
+.contacts {
+  width: 302px;
+  float: right;
+  margin-top: 62px;
+  min-height: 305px;
+  outline: yellow solid 3px;
+}
+
+.navigation {
+  width: 400px;
+  margin-top: -23px;
+  margin-bottom: 25px;
+  outline: green solid 3px;
+}
+
+.breadcrumbs {
+  margin-bottom: 9px;
+  min-height: 16px;
+  outline: yellow solid 3px;
+}
+
+.index-title {
+  outline: yellow solid 3px;
+  min-height: 41px;
+}
+
+.filters {
+  margin-bottom: 40px;
+  outline: green solid 3px;
+  min-height: 130px;
+}
+
+.catalog-content {
+  margin-bottom: 39px;
+  outline: green solid 3px;
+  min-height: 1048px;
+}
+
+.pages-nav {
+  width: 189px;
+  margin-left: 956px;
+  margin-bottom: 30px;
+  outline: green solid 3px;
+  min-height: 28px;
+}
+
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 26px;
+  outline: green solid 3px;
+}
+
+.footer-social {
+  width: 186px;
+  float: left;
+  margin-right: 211px;
+  min-height: 59px;
+  outline: yellow solid 3px;
+}
+
+.footer-nav {
+  width: 335px;
+  float: left;
+  min-height: 59px;
+  outline: yellow solid 3px;
+}
+
+.footer-copyright {
+  width: 188px;
+  float: right;
+  min-height: 59px;
+  outline: yellow solid 3px;
 }

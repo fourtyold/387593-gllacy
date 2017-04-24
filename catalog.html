@@ -8,7 +8,7 @@
 </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo">
         </div>
         <nav class="main-navigation">
@@ -28,19 +28,21 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="breadcrumbs">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a class="active" href="#">Сливочное</a></li>
-        </ul>
-      </div>
-      <div class="index-title">
-        <h1>Сливочное мороженое</h1>
-      </div>
+    <main class="container">
+      <section class="navigation">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a class="active" href="#">Сливочное</a></li>
+          </ul>
+        </div>
+        <div class="index-title">
+          <h1>Сливочное мороженое</h1>
+        </div>
+      </section>
       <div class="filters">
-        <form class="filters-form" action="https://glassy.ru" method="post">
+        <form class="filters-form" action="https://glassy.ru" method="post"> -->
           <label for="sort-type">Сортировка</label>
           <select id="sort-type" name="sort-type">
             <option value="popularity">по популярности</option>
@@ -159,7 +161,7 @@
         </div>
       </main>
       <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
           <section class="footer-social">
             <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
             <a class="social-btn social-btn-instagram" href="#">Инстаграм</a>
