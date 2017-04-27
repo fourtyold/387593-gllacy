@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Glassy Shop</title>
-    <base href="https://htmlacademy-htmlcss.github.io/387593-gllacy/1/">
     <link href="css/style.css" rel="stylesheet">
 </head>
   <body>
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="container">
         <div class="header-logo">
+          <img src="img/logo.png" width="154" height="64" alt="Glassy Shop">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -28,92 +28,93 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="slider clearfix">
-        <!-- <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle"> -->
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-        </div>
-        <div class="slider-inner">
-          <div class="slider-slides">
-            <img src="img/slider-creambrulle-raspberry.jpg" width="1045" height="880" alt="1">
-            <!-- <img src="img/slider-chocolate-lemon.jpg" width="1045" height="880" alt="2">
-            <img src="img/slider-fondant-strawberry.jpg" width="1045" height="880" alt="3"> -->
+    <main>
+        <div class="slider container">
+          <!-- <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle"> -->
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <!-- <img src="img/slider-creambrulle-raspberry.jpg" width="1045" height="880" alt="1">
+              <img src="img/slider-chocolate-lemon.jpg" width="1045" height="880" alt="2">
+              <img src="img/slider-fondant-strawberry.jpg" width="1045" height="880" alt="3"> -->
+            </div>
           </div>
         </div>
-      </div>
-      <a class="btn btn-buy"></a>
-      <section class="offers clearfix">
-        <div class="best-offer">
-          <h2 class="best-offer-title">Малинка даром!</h2>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn btn-buy" href="#">Хочу варенье!</a>
-        </div>
-        <div class="best-offer">
-          <h2 class="best-offer-title">Шоколадки даром!</h2>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn btn-buy" href="#">Хочу варенье!</a>
-        </div>
-      </section>
-      <section class="popular-items">
-        <article class="catalog-item">
-          <img src="img/creamy-orange.jpg"  width="267" height="267" alt="">
-          <b class="catalog-item-price"><span>310₽</span>/кг</b>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </article>
-        <article class="catalog-item">
-          <img src="img/creamy-coffee.jpg" width="267" height="267" alt="">
-          <b class="catalog-item-price"><span>380₽</span>/кг</b>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-        </article>
-        <article class="catalog-item">
-          <img src="img/creamy-strawberry.jpg" width="267" height="267" alt="">
-          <b class="catalog-item-price"><span>355₽</span>/кг</b>
-          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </article>
-        <article class="catalog-item">
-          <img src="img/creamy-cream-brulee.jpg" width="267" height="267" alt="">
-          <b class="catalog-item-price"><span>415₽</span>/кг</b>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-        </article>
-      </section>
-      <section class="features">
-        <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-        <div class="features-item">
-          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
-          временем технологий
-        </div>
-        <div class="features-item">
-          Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
-          сотрудничество.
-        </div>
-        <div class="features-item">
-          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты
-          и добавки произведены из натурального, экологически чистого сырья.
-        </div>
-        <div class="features-item">
-          Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути
-          и позволяет сохранить превосоходный вкус.
-        </div>
-      </section>
-      <div class="index-content clearfix">
-        <div class="news">
-          <h2 class="news-title">Новое в нашем блоге</h2>
-          <a>10 способов сервировки фруктовых щербетов к столу</a>
-        </div>
-        <div class="subscribe">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
-          и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscribe-form" action="https://glassy.ru" method="post">
-            <div class="subscribe-form-group">
-              <input type="text" name="email" placeholder="Электронная почта">
-            </div>
-            <input type="submit" class="btn" value="Отправить">
-          </form>
+        <!-- <a class="btn btn-buy"></a> -->
+        <section class="offers container">
+          <div class="best-offer">
+            <h2 class="best-offer-title">Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="btn btn-buy" href="#">Хочу варенье!</a>
+          </div>
+          <div class="best-offer">
+            <h2 class="best-offer-title">Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="btn btn-buy" href="#">Хочу варенье!</a>
+          </div>
+        </section>
+        <section class="popular-items container">
+          <article class="catalog-item popular-item">
+            <img src="img/creamy-orange.jpg"  width="267" height="267" alt="">
+            <b class="catalog-item-price"><span>310₽</span>/кг</b>
+            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+          </article>
+          <article class="catalog-item popular-item">
+            <img src="img/creamy-coffee.jpg" width="267" height="267" alt="">
+            <b class="catalog-item-price"><span>380₽</span>/кг</b>
+            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+          </article>
+          <article class="catalog-item popular-item">
+            <img src="img/creamy-strawberry.jpg" width="267" height="267" alt="">
+            <b class="catalog-item-price"><span>355₽</span>/кг</b>
+            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+          </article>
+          <article class="catalog-item popular-item">
+            <img src="img/creamy-cream-brulee.jpg" width="267" height="267" alt="">
+            <b class="catalog-item-price"><span>415₽</span>/кг</b>
+            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+          </article>
+        </section>
+        <section class="features container">
+          <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+          <div class="features-item">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
+            временем технологий
+          </div>
+          <div class="features-item">
+            Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
+            сотрудничество.
+          </div>
+          <div class="features-item">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты
+            и добавки произведены из натурального, экологически чистого сырья.
+          </div>
+          <div class="features-item">
+            Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути
+            и позволяет сохранить превосоходный вкус.
+          </div>
+        </section>
+        <div class="index-content container">
+          <div class="news">
+            <h2 class="news-title">Новое в нашем блоге</h2>
+            <a>10 способов сервировки фруктовых щербетов к столу</a>
+          </div>
+          <div class="subscribe">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
+            и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe-form" action="https://glassy.ru" method="post">
+              <div class="subscribe-form-group">
+                <input type="text" name="email" placeholder="Электронная почта">
+              </div>
+              <input type="submit" class="btn" value="Отправить">
+            </form>
+          </div>
         </div>
       </div>
       <div class="map clearfix">
@@ -124,10 +125,9 @@
           <p>Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
           <a class="btn btn-feedback" href="#">Форма обратной связи</a>
         </div>
-      </div>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="container">
         <section class="footer-social">
           <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
           <a class="social-btn social-btn-instagram" href="#">Инстаграм</a>

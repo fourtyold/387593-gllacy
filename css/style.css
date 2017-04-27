@@ -6,6 +6,13 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
+  min-height: 2416px;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .index-title h1 {
@@ -48,48 +55,54 @@ body {
 
 .container {
   width: 1146px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 27px;
   margin: 0 auto;
   outline: red solid 3px;
 }
 
 .header-logo {
-  width: 154px;
-  float: left;
-  margin-right: 24px;
+  -ms-flex-preferred-size: 154px;
+      flex-basis: 154px;
   outline: yellow solid 3px;
   min-height: 64px;
 }
 
 .main-navigation {
-  width: 674px;
+  -ms-flex-preferred-size: 674px;
+      flex-basis: 674px;
   float: left;
   outline: yellow solid 3px;
   min-height: 64px;
 }
 
 .user-block {
-  width: 267px;
-  float: right;
+  -ms-flex-preferred-size: 262px;
+      flex-basis: 262px;
   outline: yellow solid 3px;
   min-height: 64px;
 }
 
 .info {
-  width: 165px;
-  float: right;
+  -ms-flex-preferred-size: 165px;
+      flex-basis: 165px;
+  margin-left: auto;
   outline: yellow solid 3px;
   min-height: 38px;
 }
 
 .slider {
-  margin-bottom: 10px;
-  outline: green solid 3px;
+  margin-bottom: 40px;
 }
 
 .slider-controls {
-  width: 78px;
-  float: left;
+  -ms-flex-preferred-size: 78px;
+      flex-basis: 78px;
   margin-top: 440px;
   margin-right: 99px;
   outline: yellow solid 3px;
@@ -97,74 +110,65 @@ body {
 }
 
 .slider-inner {
-  width: 803px;
-  float: left;
+  -ms-flex-preferred-size: 803px;
+      flex-basis: 803px;
+  margin-right: 160px;
   outline: yellow solid 3px;
-  min-height: 515px;
+  min-height: 485px;
 }
 
 .offers {
-  margin-bottom: 10px;
-  outline: green solid 3px;
+  margin-bottom: 40px;
 }
 
 .best-offer {
-  width: 561px;
-  float: left;
+  -ms-flex-preferred-size: 561px;
+      flex-basis: 561px;
   outline: yellow solid 3px;
   min-height: 229px;
 }
 
-.best-offer:last-child {
-  float: right;
-}
-
 .popular-items {
-  margin-bottom: 10px;
-  outline: green solid 3px;
-  min-height: 382px;
+  margin-bottom: 40px;
 }
 
 .catalog-item {
-  display: inline-block;
-  width: 267px;
-  margin-right: 22px;
-  margin-bottom: 41px;
-  vertical-align: top;
+  -ms-flex-preferred-size: 267px;
+      flex-basis: 267px;
   min-height: 322px;
   outline: yellow solid 3px;
 }
 
-.catalog-item:nth-child(4n) {
-  margin-right: 0;
+.catalog-item:not(.popular-item) {
+  margin-bottom: 40px;
 }
 
 .features {
   margin-bottom: 40px;
   min-height: 307px;
-  outline: green solid 3px;
 }
 
 .index-content {
   margin-bottom: 40px;
-  outline: green solid 3px;
 }
 
 .news {
-  width: 560px;
-  float: left;
+  -ms-flex-preferred-size: 560px;
+      flex-basis: 560px;
   min-height: 220px;
   outline: yellow solid 3px;
 }
 
 .subscribe {
-  width: 560px;
-  float: right;
+  -ms-flex-preferred-size: 560px;
+      flex-basis: 560px;
   min-height: 220px;
   outline: yellow solid 3px;
 }
 
 .map {
+  width: 1200px;
+  margin: 0 auto;
   min-height: 430px;
   outline: green solid 3px;
 }
@@ -173,7 +177,7 @@ body {
   width: 80px;
   float: left;
   margin-top: 138px;
-  margin-left: 239px;
+  margin-left: 266px;
   min-height: 140px;
   outline: yellow solid 3px;
 }
@@ -181,6 +185,7 @@ body {
 .contacts {
   width: 302px;
   float: right;
+  margin-right: 27px;
   margin-top: 62px;
   min-height: 305px;
   outline: yellow solid 3px;
@@ -190,6 +195,7 @@ body {
   width: 400px;
   margin-top: -23px;
   margin-bottom: 25px;
+  margin-left: 27px;
   outline: green solid 3px;
 }
 
@@ -212,13 +218,13 @@ body {
 
 .catalog-content {
   margin-bottom: 39px;
+  min-height: 1051px;
   outline: green solid 3px;
-  min-height: 1048px;
 }
 
 .pages-nav {
   width: 189px;
-  margin-left: 956px;
+  margin-left: 983px;
   margin-bottom: 30px;
   outline: green solid 3px;
   min-height: 28px;
@@ -233,23 +239,23 @@ body {
 }
 
 .footer-social {
-  width: 186px;
-  float: left;
-  margin-right: 211px;
+  -ms-flex-preferred-size: 186px;
+      flex-basis: 186px;
   min-height: 59px;
   outline: yellow solid 3px;
 }
 
 .footer-nav {
-  width: 335px;
-  float: left;
+  -ms-flex-preferred-size: 335px;
+      flex-basis: 335px;
+  margin-right: 5px;
   min-height: 59px;
   outline: yellow solid 3px;
 }
 
 .footer-copyright {
-  width: 188px;
-  float: right;
+  -ms-flex-preferred-size: 188px;
+      flex-basis: 188px;
   min-height: 59px;
   outline: yellow solid 3px;
 }
