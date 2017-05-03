@@ -1,6 +1,5 @@
 body {
   min-width: 1200px;
-  min-height: 2416px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -37,7 +36,7 @@ main {
   position: relative;
   padding: 0 27px;
   margin: 0 auto;
-  outline: red solid 1px;
+  /*outline: red solid 1px;*/
 }
 
 .btn {
@@ -269,7 +268,7 @@ main {
       flex-basis: 78px;
   margin-top: 440px;
   margin-right: 99px;
-  outline: yellow solid 3px;
+  /*outline: yellow solid 3px;*/
   min-height: 20px;
 }
 
@@ -277,7 +276,7 @@ main {
   -ms-flex-preferred-size: 803px;
       flex-basis: 803px;
   margin-right: 160px;
-  outline: yellow solid 3px;
+  /*outline: yellow solid 3px;*/
   min-height: 520px;
 }
 
@@ -602,7 +601,7 @@ main {
 
 .filters {
   margin-bottom: 43px;
-  outline: green solid 3px;
+  /*outline: green solid 3px;*/
   min-height: 130px;
 }
 
