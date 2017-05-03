@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог / Glassy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
-  <body>
+  <body class="catalog">
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
-          <img src="img/logo.png" width="154" height="64" alt="Glassy Shop">
+          <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="Glassy Shop"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -19,30 +21,30 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="btn btn-search" href="#">Поиск</a>
-          <a class="btn btn-login" href="#">Вход</a>
-          <a class="btn btn-basket" href="#">2 товара</a>
+          <ul>
+            <li><a class="btn-search" href="#">Поиск</a></li>
+            <li><a class="btn-login" href="#">Вход</a></li>
+            <li><a class="btn-basket full" href="#">2 товара</a></li>
+          </ul>
         </div>
         <div class="info">
-          С 10 до 20 ежедневно,<span>8 812 450-25-25</span>
+          С 10 до 20, ежедневно<br><span>8 812 450-25-25</span>
         </div>
       </div>
     </header>
     <main>
       <section class="navigation">
-        <div class="breadcrumbs">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a class="active" href="#">Сливочное</a></li>
-          </ul>
-        </div>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная<span>&#187;</span></a></li>
+          <li><a href="#">Каталог<span>&#187;</span></a></li>
+          <li class="active">Сливочное</li>
+        </ul>
         <div class="index-title">
           <h1>Сливочное мороженое</h1>
         </div>
       </section>
       <div class="filters container">
-        <form class="filters-form" action="https://glassy.ru" method="get">
+        <!-- <form class="filters-form" action="https://glassy.ru" method="get">
           <label for="sort-type">Сортировка</label>
           <select id="sort-type" name="sort-type">
             <option value="popularity">по популярности</option>
@@ -83,7 +85,7 @@
             </label>
           </div>
           <input type="submit" class="btn" value="Применить">
-        </form>
+        </form> -->
         </div>
         <div class="catalog-content container">
           <article class="catalog-item">
@@ -100,7 +102,7 @@
             <img src="img/creamy-strawberry.jpg"  width="267" height="267" alt="">
             <b class="catalog-item-price"><span>355₽</span>/кг</b>
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <a class="btn" href="#">Быстрый просмотр</a>
+            <!-- <a class="btn" href="#">Быстрый просмотр</a> -->
           </article>
           <article class="catalog-item">
             <img src="img/creamy-cream-brulee.jpg"  width="267" height="267" alt="">
@@ -120,7 +122,7 @@
           <article class="catalog-item">
             <img src="img/creamy-lemon.jpg"  width="267" height="267" alt="">
             <b class="catalog-item-price"><span>375₽</span>/кг</b>
-            <h3><a href="#">Сливочно-карамельное с карамельной присыпкой</a></h3>
+            <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
           </article>
           <article class="catalog-item">
             <img src="img/creamy-chocolate.jpg"  width="267" height="267" alt="">
@@ -144,21 +146,22 @@
           </article>
           <article class="catalog-item">
             <img src="img/creamy-mint.jpg"  width="267" height="267" alt="">
-            <b class="catalog-item-price"><span>415₽</span>/кг</b>
+            <b class="catalog-item-price"><span>420₽</span>/кг</b>
             <h3><a href="#">Сливочное с мятным сиропом</a></h3>
           </article>
         </div>
         <div class="pages-nav">
           <ul>
-            <li><a class="page-number previous-page" href="#">&lt;</a></li>
-            <li><a class="page-number active" href="#">1</a></li>
-            <li><a class="page-number" href="#">2</a></li>
-            <li><a class="page-number" href="#">3</a></li>
-            <li><a class="page-number" href="#">4</a></li>
-            <li><a class="page-number" href="#">5</a></li>
-            <li><a class="page-number next-page" href="#">&gt;</a></li>
+            <li><a class="previous-page not-active" href="#">&lt;</a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a class="next-page" href="#">&gt;</a></li>
           </ul>
         </div>
+        <div class="separator"></div>
       </main>
       <footer class="main-footer">
         <div class="container">
@@ -170,16 +173,15 @@
           </section>
           <section class="footer-nav">
             <ul>
-              <li><a href="#">Для поставщиков</a></li>
-              <li><a href="#">О производстве</a></li>
+              <li><a class="providers" href="#">Для поставщиков</a></li>
               <li><a href="#">Наши документы</a></li>
+              <li><a href="#">О производстве</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
           </section>
           <section class="footer-copyright">
-            <div class="footer-logo">
-            </div>
-            <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy &#169; 2017</a></p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo"><img src="img/logo-footer.png" width="108" height="38" alt="HTML Academy"></a>
+            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>&#169; 2017</p>
           </section>
         </div>
       </footer>

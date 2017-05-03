@@ -3,32 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Glassy Shop</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="header-logo">
-          <img src="img/logo.png" width="154" height="64" alt="Glassy Shop">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <body>
+      <header class="main-header">
+        <div class="container">
+          <div class="header-logo">
+            <img src="img/logo.png" width="154" height="64" alt="Glassy Shop">
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О Компании</a></li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <ul>
+              <li><a class="btn-search" href="#">Поиск</a></li>
+              <li><a class="btn-login" href="#">Вход</a></li>
+              <li><a class="btn-basket" href="#">Пусто</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            С 10 до 20, ежедневно<br><span>8 812 450-25-25</span>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="btn btn-search" href="#">Поиск</a>
-          <a class="btn btn-login" href="#">Вход</a>
-          <a class="btn btn-basket" href="#">Пусто</a>
-        </div>
-        <div class="info">
-          С 10 до 20 ежедневно,<span>8 812 450-25-25</span>
-        </div>
-      </div>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="slider container">
           <!-- <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
@@ -48,22 +52,22 @@
         </div>
         <!-- <a class="btn btn-buy"></a> -->
         <section class="offers container">
-          <div class="best-offer">
+          <div class="best-offer-left">
             <h2 class="best-offer-title">Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="btn btn-buy" href="#">Хочу варенье!</a>
           </div>
-          <div class="best-offer">
+          <div class="best-offer-right">
             <h2 class="best-offer-title">Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="btn btn-buy" href="#">Хочу варенье!</a>
+            <a class="btn btn-buy" href="#">Хочу шоколадки!</a>
           </div>
         </section>
         <section class="popular-items container">
           <article class="catalog-item popular-item">
             <img src="img/creamy-orange.jpg"  width="267" height="267" alt="">
             <b class="catalog-item-price"><span>310₽</span>/кг</b>
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
           </article>
           <article class="catalog-item popular-item">
             <img src="img/creamy-coffee.jpg" width="267" height="267" alt="">
@@ -81,33 +85,35 @@
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
           </article>
         </section>
-        <section class="features container">
-          <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-          <div class="features-item">
-            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
-            временем технологий
+        <section class="container">
+          <div class="features">
+          <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+          <div class="features-item item-1">
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
+              временем технологий
           </div>
-          <div class="features-item">
-            Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
-            сотрудничество.
+          <div class="features-item item-2">
+              Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
+              сотрудничество.
           </div>
-          <div class="features-item">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты
-            и добавки произведены из натурального, экологически чистого сырья.
+          <div class="features-item item-3">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты
+              и добавки произведены из натурального, экологически чистого сырья.
           </div>
-          <div class="features-item">
-            Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути
-            и позволяет сохранить превосоходный вкус.
+          <div class="features-item item-4">
+              Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути
+              и позволяет сохранить превосходный вкус.
           </div>
+        </div>
         </section>
         <div class="index-content container">
           <div class="news">
             <h2 class="news-title">Новое в нашем блоге</h2>
-            <a>10 способов сервировки фруктовых щербетов к столу</a>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="subscribe">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
-            и не слать всякой ненужной ерунды. Честно =)</p>
+              и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://glassy.ru" method="post">
               <div class="subscribe-form-group">
                 <input type="text" name="email" placeholder="Электронная почта">
@@ -121,8 +127,8 @@
         <div class="pin">
         </div>
         <div class="contacts">
-          <p>Адрес главного офиса и офлайн магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-          <p>Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
+          <p class="adress">Адрес главного офиса<br>и офлайн магазина:<br><span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+          <p class="telephone">Для заказов по телефону:<br><span>8 812 450-25-25</span><br>(с 10 до 20 ежедневно)</p>
           <a class="btn btn-feedback" href="#">Форма обратной связи</a>
         </div>
     </main>
@@ -136,16 +142,15 @@
         </section>
         <section class="footer-nav">
           <ul>
-            <li><a href="#">Для поставщиков</a></li>
-            <li><a href="#">О производстве</a></li>
+            <li><a class="providers" href="#">Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
             <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </section>
         <section class="footer-copyright">
-          <div class="footer-logo">
-          </div>
-          <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy &#169; 2017</a></p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo"><img src="img/logo-footer.png" width="108" height="38" alt="HTML Academy"></a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>&#169; 2017</p>
         </section>
       </div>
     </footer>
