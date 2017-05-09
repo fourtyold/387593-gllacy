@@ -58,7 +58,24 @@
                 </form>
               </div>
             </li>
-            <li><a class="btn-basket full" href="#">2 товара</a></li>
+            <li class="user-basket full-basket">
+              <a class="btn-basket full" href="#">2 товара</a>
+              <div>
+                <div class="user-basket-content">
+                  <div>
+                    <button class="remove-from-basket" type="button" title="Удалить">Удалить</button>
+                    <p class="creamy-orange">Пломбир с апельсиновым джемом</p><span class="item-weight">1,5 кг х <span class="item-price">200 руб.</span></span><span class="total-price">300 руб.</span>
+                  </div>
+                  <div>
+                    <button class="remove-from-basket" type="button" title="Удалить">Удалить</button>
+                    <p class="creamy-strawberry">Клубничный пломбир с присыпкой из белого шоколада</p><span class="item-weight">1,5 кг х <span class="item-price">300 руб.</span></span><span class="total-price">450 руб.</span>
+                  </div>
+                  <div class="basket-separator"></div>
+                  <span>Итого: 750 руб.</span>
+                  <a class="btn" href="#">Оформить заказ</a>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="info">
@@ -78,48 +95,103 @@
         </div>
       </section>
       <div class="filters container">
-        <!-- <form class="filters-form" action="https://glassy.ru" method="get">
-          <label for="sort-type">Сортировка</label>
-          <select id="sort-type" name="sort-type">
-            <option value="popularity">по популярности</option>
-          </select>
-          <label for="price-range">Цена:</label>
-          <input type="range" id="price-range" min="1" max="1000" step="1">
+        <form class="filters-form" action="https://glassy.ru" method="get">
+          <div class="select">
+            <label for="sort-type">Сортировка:</label>
+            <select id="sort-type" name="sort-type">
+              <option value="popularity">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="callories">по жирности</option>
+            </select>
+          </div>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">Цена:<input name="min-price" type="text" value="100">руб.</label>
+              <label class="max-price">–<input name="max-price" type="text" value="500">руб.</label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
           <div class="radio-btn-area">
             <div class="radio-btn-area-title">Жирность:</div>
-            <label>
-              <input type="radio" name="fat" value="0">0%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="less10" checked>до 10%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="less30">до 30%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="more30">выше 30%
-            </label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="fat" value="0">
+                  <span class="radio-btn-indicator"></span>
+                  0%
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="fat" value="less10" checked>
+                  <span class="radio-btn-indicator"></span>
+                  до 10%
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="fat" value="less30">
+                  <span class="radio-btn-indicator"></span>
+                  до 30%
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="fat" value="more30">
+                  <span class="radio-btn-indicator"></span>
+                  выше 30%
+                </label>
+              </li>
           </div>
           <div class="checkbox-area">
             <div class="checkbox-area-title">Наполнители:</div>
-            <label>
-            <input type="checkbox" name="chocolate" checked>шоколадные
-            </label>
-            <label>
-            <input type="checkbox" name="sugarpowder" checked>сахарные присыпки
-            </label>
-            <label>
-            <input type="checkbox" name="fruit">фрукты
-            </label>
-            <label>
-            <input type="checkbox" name="syrup">сиропы
-            </label>
-            <label>
-            <input type="checkbox" name="jam">джемы
-            </label>
+            <ul>
+              <li>
+                <label>
+                <input type="checkbox" name="chocolate" checked>
+                <span class="checkbox-indicator"></span>
+                шоколадные
+                </label>
+              </li>
+              <li>
+                <label>
+                <input type="checkbox" name="sugarpowder" checked>
+                <span class="checkbox-indicator"></span>
+                сахарные присыпки
+                </label>
+              </li>
+              <li>
+                <label>
+                <input type="checkbox" name="fruit">
+                <span class="checkbox-indicator"></span>
+                фрукты
+                </label>
+              </li>
+              <li>
+                <label>
+                <input type="checkbox" name="syrup">
+                <span class="checkbox-indicator"></span>
+                сиропы
+                </label>
+              </li>
+              <li>
+                <label>
+                <input type="checkbox" name="jam">
+                <span class="checkbox-indicator"></span>
+                джемы
+                </label>
+              </li>
+            </ul>
           </div>
-          <input type="submit" class="btn" value="Применить">
-        </form> -->
+          <button type="submit">Применить</button>
+        </form>
         </div>
         <div class="catalog-content container">
           <article class="catalog-item">
