@@ -95,6 +95,7 @@ main {
 
 .main-menu li {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   font-size: 16px;
   line-height: 18px;
@@ -691,11 +692,11 @@ main {
 
 .slider .btn {
   display: inline-block;
+  vertical-align: top;
   padding: 12px 45px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
-  vertical-align: top;
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -712,10 +713,10 @@ main {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  vertical-align: top;
   background-color: transparent;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
@@ -829,7 +830,7 @@ body > input[type="radio"] {
   margin-bottom: 38px;
 }
 
-.catalog-item .pic {
+.catalog-item .item-picture {
   position: relative;
   width: 265px;
   height: 265px;
@@ -900,7 +901,7 @@ body > input[type="radio"] {
   z-index: 10;
 }
 
-.catalog-item:hover .pic,
+.catalog-item:hover .item-picture,
 .catalog-item:hover .catalog-item-price,
 .catalog-item:hover h3 {
   z-index: 20;
@@ -1021,6 +1022,7 @@ body > input[type="radio"] {
 
 .news a {
   display: inline-block;
+  vertical-align: top;
   width: 285px;
   font-size: 24px;
   line-height: 30px;
@@ -1295,6 +1297,7 @@ body > input[type="radio"] {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 49%;
   font-size: 14px;
   line-height: 16px;
@@ -1553,16 +1556,17 @@ body > input[type="radio"] {
 }
 
 .pages-nav {
-  width: 201px;
-  margin-left: 978px;
-  margin-bottom: 31px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid rgba(230, 235, 233, 0.3);
 }
 
 .pages-nav ul {
+  width: 201px;
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin: 0;
+  margin-left: 951px;
   padding: 0;
   font-size: 0;
 }
@@ -1665,14 +1669,6 @@ body > input[type="radio"] {
 .pages-nav .not-active:active::after {
   background-color: rgb(255, 255, 255);
 }
-
-.separator {
-  width: 1146px;
-  height: 2px;
-  margin: 0 auto;
-  background-color: rgba(230, 235, 233, 0.3);
-}
-
 
 /*
 ////////////////////////////////////////////////////////  FOOTER  ///////////////////////////////////////////////////////
