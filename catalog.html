@@ -5,9 +5,10 @@
     <title>Каталог / Glassy Shop</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
   <body class="catalog-body">
+    <div class="site-wrapper">
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
@@ -38,7 +39,7 @@
               <div>
                 <form class="search-form" action="https://glassy.ru" method="get">
                   <label for="search-input">Что ищем?</label>
-                  <input type="text" id="search-input" name="email" placeholder="Что ищем?">
+                  <input type="text" id="search-input" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </li>
@@ -47,9 +48,9 @@
               <div>
                 <form class="login-form" action="https://glassy.ru" method="get">
                   <label for="login-email">Электронная почта</label>
-                  <input type="text" id="login-email" name="email" placeholder="Электронная почта">
+                  <input type="text" id="login-email" name="login" placeholder="Электронная почта">
                   <label for="login-password">Пароль</label>
-                  <input type="password" id="login-password" name="email" placeholder="Пароль">
+                  <input type="password" id="login-password" name="password" placeholder="Пароль">
                   <button type="submit" class="btn">Войти</button>
                   <div>
                     <a href="#"><span>Забыли пароль?</span></a>
@@ -149,6 +150,7 @@
                   выше 30%
                 </label>
               </li>
+            </ul>
           </div>
           <div class="checkbox-area">
             <div class="checkbox-area-title">Наполнители:</div>
@@ -327,5 +329,7 @@
           </section>
         </div>
       </footer>
+    </div>
+      <script src="js/glaccy-script.min.js"></script>
     </body>
   </html>
