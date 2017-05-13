@@ -6,7 +6,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   background-color: rgb(132, 157, 143);
 }
 
@@ -47,9 +47,9 @@ main {
 
 .btn {
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
-  background-image: linear-gradient(to bottom, #f26843, #e74a35);
-  background-color: #e74a35;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(242,104,67)), to(rgb(231,74,53)));
+  background-image: linear-gradient(to bottom, rgb(242,104,67), rgb(231,74,53));
+  background-color: rgb(231,74,53);
   -webkit-box-shadow: 0 2px 2px rgb(172, 16, 0);
           box-shadow: 0 2px 2px rgb(172, 16, 0);
   font-size: 18px;
@@ -63,13 +63,13 @@ main {
 }
 
 .btn:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
-  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245,134,105)), to(rgb(236,111,94)));
+  background-image: linear-gradient(to bottom, rgb(245,134,105), rgb(236,111,94));
 }
 
 .btn:active {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d74632), to(#e1613e));
-  background-image: linear-gradient(to bottom, #d74632, #e1613e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(215,70,50)), to(rgb(225,97,62)));
+  background-image: linear-gradient(to bottom, rgb(215,70,50), rgb(225,97,62));
   -webkit-box-shadow: inset 0 2px 2px rgb(148, 39, 24);
           box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 }
@@ -79,7 +79,7 @@ main {
   margin: 0 auto;
   margin-bottom: 10px;
   padding-top: 9px;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .header-logo {
@@ -91,7 +91,6 @@ main {
   -ms-flex-preferred-size: 710px;
       flex-basis: 710px;
 }
-
 
 .main-navigation .main-menu {
   list-style: none;
@@ -123,7 +122,6 @@ main {
   color: rgb(255, 255, 255);
   display: block;
   padding: 7px 14px;
-
 }
 
 .main-navigation span:hover {
@@ -378,7 +376,7 @@ main {
 }
 
 .user-block .btn-login {
-  width: 58px;
+  min-width: 58px;
   text-align: right;
 }
 
@@ -393,6 +391,7 @@ main {
   background-position: -5px -479px;
   background-repeat: no-repeat;
 }
+
 .user-block .btn-login:hover::before,
 .user-block .btn-login:active::before {
   background-image: url("../img/spritesheet.png");
@@ -432,6 +431,7 @@ main {
   font-size: 11px;
   color: transparent;
 }
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
   width: 213px;
@@ -482,17 +482,17 @@ main {
 
 .login-form input[type="text"]:focus::-webkit-input-placeholder,
 .login-form input[type="password"]:focus::-webkit-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .login-form input[type="text"]:focus:-ms-input-placeholder,
 .login-form input[type="password"]:focus:-ms-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .login-form input[type="text"]:focus::placeholder,
 .login-form input[type="password"]:focus::placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .login-form .btn {
@@ -533,7 +533,7 @@ main {
 }
 
 .user-block .btn-basket {
-  width: 61px;
+  min-width: 61px;
   padding-left: 44px;
   padding-right: 12px;
 }
@@ -712,32 +712,31 @@ main {
 }
 
 .user-basket-content .btn:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
-  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245,134,105)), to(rgb(236,111,94)));
+  background-image: linear-gradient(to bottom, rgb(245,134,105), rgb(236,111,94));
   border-radius: 21px;
   color: rgb(255, 255, 255);
 }
 
 .user-basket-content .btn:active {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d74632), to(#e1613e));
-  background-image: linear-gradient(to bottom, #d74632, #e1613e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(215,70,50)), to(rgb(225,97,62)));
+  background-image: linear-gradient(to bottom, rgb(215,70,50), rgb(225,97,62));
   -webkit-box-shadow: inset 0 2px 2px rgb(148, 39, 24);
           box-shadow: inset 0 2px 2px rgb(148, 39, 24);
   color: rgb(255, 255, 255);
 }
 
-
 .info {
   position: absolute;
   max-width: 167px;
   right: 27px;
-  bottom: -40px;;
+  top: 60px;
   font-size: 14px;
   line-height: 23px;
   color: rgb(255, 255, 255);
   font-weight: 700;
   text-align: right;
-  }
+}
 
 .info span {
   font-size: 22px;
@@ -749,10 +748,10 @@ main {
   width: 1146px;
   padding: 0 27px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   padding-top: 304px;
   text-align: center;
-  color: #ffffff;
+  color: rgb(255,255,255);
 }
 
 .slide-title {
@@ -874,22 +873,24 @@ body > input[type="radio"] {
           flex-direction: column;
   border-radius: 15px;
   min-height: 229px;
+  background-size: cover;
 }
 
 .best-offer-left {
-  background-image: url("../img/background-banner-raspberry.jpg");
+  background-image: url("../img/background-banner-raspberry.png");
   background-repeat: no-repeat;
   background-color: rgb(140, 5, 30);
 }
 
 .best-offer-right {
-  background-image: url("../img/background-banner-chocolate.jpg");
+  background-image: url("../img/background-banner-chocolate.png");
   background-repeat: no-repeat;
   background-color: rgb(95, 58, 39);
 }
 
 .btn-buy {
   display: inline-block;
+  vertical-align: top;
   margin-top: auto;
   margin-bottom: 27px;
   margin-right: 21px;
@@ -898,6 +899,9 @@ body > input[type="radio"] {
 }
 
 .popular-items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 38px;
 }
 
@@ -905,6 +909,11 @@ body > input[type="radio"] {
   -ms-flex-preferred-size: 267px;
       flex-basis: 267px;
   position: relative;
+  margin-right: auto;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:not(.popular-item) {
@@ -986,6 +995,7 @@ body > input[type="radio"] {
 
 .item-hover .btn {
   display: inline-block;
+  vertical-align: top;
   margin: 0 auto;
   margin-bottom: 22px;
   padding-left: 20px;
@@ -1021,6 +1031,7 @@ body > input[type="radio"] {
   background-color: rgb(236, 225, 197);
   background-repeat: no-repeat;
   background-position: 50%;
+  background-size: cover;
   border-radius: 16px;
   color: rgb(50, 50, 50);
 }
@@ -1088,6 +1099,8 @@ body > input[type="radio"] {
   min-height: 220px;
   background-image: url("../img/background-news.jpg");
   background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
 }
 
@@ -1119,10 +1132,13 @@ body > input[type="radio"] {
 .subscribe {
   -ms-flex-preferred-size: 560px;
       flex-basis: 560px;
-  min-height: 220px;
+  min-height: 200px;
   background-color: rgb(248, 247, 244);
   background-image: url("../img/background-subscribe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
+  padding-bottom: 20px;
 }
 
 .subscribe p {
@@ -1130,7 +1146,7 @@ body > input[type="radio"] {
   margin: 0;
   margin-top: 35px;
   margin-left: 26px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   color: rgb(90, 90 ,90);
 }
 
@@ -1192,15 +1208,15 @@ body > input[type="radio"] {
 }
 
 .subscribe-form input[type="text"]:focus::-webkit-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .subscribe-form input[type="text"]:focus:-ms-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .subscribe-form input[type="text"]:focus::placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .map {
@@ -1215,8 +1231,8 @@ body > input[type="radio"] {
 }
 
 .map iframe {
-     width: 100%;
-     height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
@@ -1265,7 +1281,6 @@ body > input[type="radio"] {
   padding-left: 28px;
   padding-right: 28px;
 }
-
 
 /*
 ///////////////////////////////////////////////////  CATALOG.HTML   //////////////////////////////////////////////////
@@ -1408,7 +1423,7 @@ body > input[type="radio"] {
 .price-controls input {
   width: 30px;
   padding: 0;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -1450,6 +1465,11 @@ body > input[type="radio"] {
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .range-controls .toggle-min {
@@ -1931,7 +1951,7 @@ body > input[type="radio"] {
   font-size: 12px;
   line-height: 18px;
   color: rgb(255, 255, 255);
-  margin:0;
+  margin: 0;
   padding: 0;
   margin-top: -2px;
 }
@@ -1965,108 +1985,106 @@ body > input[type="radio"] {
 */
 
 .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-basket {
-    width: 21px;
-    height: 20px;
-    background-position: -5px -5px;
+  width: 21px;
+  height: 20px;
+  background-position: -5px -5px;
 }
 
 .sprite-basket-full {
-    width: 21px;
-    height: 20px;
-    background-position: -5px -35px;
+  width: 21px;
+  height: 20px;
+  background-position: -5px -35px;
 }
 
 .sprite-facebook {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -65px;
+  width: 32px;
+  height: 32px;
+  background-position: -5px -65px;
 }
 
 .sprite-feature-icon-cow {
-    width: 48px;
-    height: 49px;
-    background-position: -5px -107px;
+  width: 48px;
+  height: 49px;
+  background-position: -5px -107px;
 }
 
 .sprite-feature-icon-ic {
-    width: 49px;
-    height: 49px;
-    background-position: -5px -166px;
+  width: 49px;
+  height: 49px;
+  background-position: -5px -166px;
 }
 
 .sprite-feature-icon-leaf {
-    width: 49px;
-    height: 49px;
-    background-position: -5px -225px;
+  width: 49px;
+  height: 49px;
+  background-position: -5px -225px;
 }
 
 .sprite-feature-icon-term {
-    width: 48px;
-    height: 49px;
-    background-position: -5px -284px;
+  width: 48px;
+  height: 49px;
+  background-position: -5px -284px;
 }
 
 .sprite-heart {
-    width: 15px;
-    height: 13px;
-    background-position: -5px -343px;
+  width: 15px;
+  height: 13px;
+  background-position: -5px -343px;
 }
 
 .sprite-hit {
-    width: 61px;
-    height: 61px;
-    background-position: -5px -366px;
+  width: 61px;
+  height: 61px;
+  background-position: -5px -366px;
 }
 
 .sprite-instagram {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -437px;
+  width: 32px;
+  height: 32px;
+  background-position: -5px -437px;
 }
 
 .sprite-login {
-    width: 21px;
-    height: 19px;
-    background-position: -5px -479px;
+  width: 21px;
+  height: 19px;
+  background-position: -5px -479px;
 }
 
 .sprite-login-hover {
-    width: 21px;
-    height: 19px;
-    background-position: -5px -508px;
+  width: 21px;
+  height: 19px;
+  background-position: -5px -508px;
 }
 
 .sprite-search {
-    width: 17px;
-    height: 17px;
-    background-position: -5px -537px;
+  width: 17px;
+  height: 17px;
+  background-position: -5px -537px;
 }
 
 .sprite-search-hover {
-    width: 17px;
-    height: 17px;
-    background-position: -5px -564px;
+  width: 17px;
+  height: 17px;
+  background-position: -5px -564px;
 }
 
 .sprite-twitter {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -591px;
+  width: 32px;
+  height: 32px;
+  background-position: -5px -591px;
 }
 
 .sprite-vkontakte {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -633px;
+  width: 32px;
+  height: 32px;
+  background-position: -5px -633px;
 }
-
-
 
 /*//////////////////////////////////////////////////////MODAL CONTENT////////////////////////////////////////////////////////*/
 
@@ -2171,17 +2189,17 @@ body > input[type="radio"] {
 
 .feedback-form input[type="text"]:focus::-webkit-input-placeholder,
 .feedback-form textarea:focus::-webkit-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .feedback-form input[type="text"]:focus:-ms-input-placeholder,
 .feedback-form textarea:focus:-ms-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .feedback-form input[type="text"]:focus::placeholder,
 .feedback-form textarea:focus::placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .feedback-form .btn {
@@ -2259,13 +2277,13 @@ body > input[type="radio"] {
 }
 
 @-webkit-keyframes emerge {
-  0%   {
+  0% {
 -webkit-transform: translate(500px, 150px);
         transform: translate(500px, 150px); }
 }
 
 @keyframes emerge {
-  0%   {
+  0% {
 -webkit-transform: translate(500px, 150px);
         transform: translate(500px, 150px); }
 }
